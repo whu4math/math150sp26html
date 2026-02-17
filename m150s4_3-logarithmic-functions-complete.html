@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>4.3 Logarithmic Functions</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="umbc_style.css" />
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">Print/Save as PDF</button>
+
+<h1 class="document-title">4.3 Logarithmic Functions</h1>
+<h1 class="section-title">Motivation</h1>
+<p><span class="math inline">\(g(x) = \dfrac{x-1}{2x+1}\)</span> is
+one-to-one. We may use the “switch and solve” method to solve for its
+inverse.</p>
+<p><span class="math inline">\(f(x) = 2^x\)</span> is also one-to-one.
+Can you solve for the inverse?</p>
+<h1 class="section-title">Logarithmic Function</h1>
+<p>We define the inverse of exponential functions as <strong>logarithmic
+functions</strong>.</p>
+<p><span class="math display">\[a^y = x \iff \log_a x = y\]</span></p>
+<p>In words, “<em>a raised to the power of y is x</em>” is equivalent to
+“<em>log base a of x is y</em>”.</p>
+<h2 class="unnumbered" id="remarks">Remarks:</h2>
+<ul>
+<li><p>Both functions have the same base <span
+class="math inline">\(a\)</span> with <span class="math inline">\(a &gt;
+0\)</span> and <span class="math inline">\(a \neq 1\)</span>.</p></li>
+<li><p>The input of the exponential function (the exponent) is the
+output of the logarithmic function. So <span
+class="math inline">\(\log_a x\)</span> is the power to which <span
+class="math inline">\(a\)</span> is raised to get <span
+class="math inline">\(x\)</span>. <strong>Remember this: log gives us
+power.</strong></p></li>
+<li><p>The output of the exponential function is
+<strong>non-negative</strong>. So the input of the log function is
+non-negative.</p></li>
+</ul>
+<p><strong>Problem 1.</strong> What is the inverse of <span
+class="math inline">\(f(x) = 2^x\)</span>? Sketch the graphs of both and
+state their domain, range, and asymptotes.</p>
+<div style="text-align: center; margin: 20px 0;">
+<img src="images/p43-2x.svg" alt="Graph showing f(x) = 2^x (exponential function) and its inverse f^{-1}(x) = log_2(x) (logarithmic function) reflected across the line y = x. The exponential function passes through (0,1) with horizontal asymptote at y = 0, while the logarithmic function passes through (1,0) with vertical asymptote at x = 0. Both functions are inverses of each other, demonstrated by their symmetry about the diagonal line y = x" /></p>
+<p><span>Graph of <span class="math inline">\(y=2^x\)</span> and its
+inverse <span class="math inline">\(y=\log_2{x}\)</span></span></p>
+</div>
+<div style="text-align: center; margin: 20px 0;">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="math inline">\(f(x) =
+2^x\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(f^{-1}(x) =
+\log_2 x\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="math inline">\(D: (-\infty,
+\infty)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(D: (0,
+\infty)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="math inline">\(R: (0,
+\infty)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(R: (-\infty,
+\infty)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">H.A.: <span class="math inline">\(y =
+0\)</span></td>
+<td style="text-align: center;">V.A.: <span class="math inline">\(x =
+0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Problem 2.</strong> Use exponential form to evaluate log.</p>
+<ol>
+<li><p><span class="math inline">\(\log_2 32 = 5\)</span> (Because <span
+class="math inline">\(2^5 = 32\)</span>)</p></li>
+<li><p><span class="math inline">\(\log_{10} 1000 = 3\)</span> (Because
+<span class="math inline">\(10^3 = 1000\)</span>)</p></li>
+<li><p><span class="math inline">\(\log_{81} 3 = \dfrac{1}{4}\)</span>
+(Because <span class="math inline">\(81^{1/4} = 3\)</span>, or
+equivalently <span class="math inline">\(3^4 = 81\)</span>)</p></li>
+</ol>
+<p><strong>Problem 3.</strong> Write in exponential form and solve for
+<span class="math inline">\(x\)</span>.</p>
+<ol>
+<li><p><span class="math inline">\(\log_2 x = 3\)</span></p>
+<p><span class="math inline">\(2^3 = x\)</span></p>
+<p><span class="math inline">\(x = 8\)</span></p></li>
+<li><p><span class="math inline">\(\log_3 \left(\frac{1}{27}\right) =
+x\)</span></p>
+<p><span class="math inline">\(3^x = \dfrac{1}{27} =
+\left(\dfrac{1}{3}\right)^3 = (3)^{-3}\)</span></p>
+<p><span class="math inline">\(x = -3\)</span></p></li>
+</ol>
+<h2 class="unnumbered" id="special-logarithms">Special Logarithms</h2>
+<p><strong>Common log</strong> (base 10): <span
+class="math inline">\(\log x = \log_{10} x\)</span></p>
+<p><strong>Natural log</strong> (base <span
+class="math inline">\(e\)</span>): <span class="math inline">\(\ln x =
+\log_e x\)</span></p>
+<p><strong>Problem 4.</strong> Solve for <span
+class="math inline">\(x\)</span>.</p>
+<ol>
+<li><p><span class="math inline">\(\ln x = -1\)</span></p>
+<p><span class="math inline">\(e^{-1} = x\)</span></p>
+<p><span class="math inline">\(x = \dfrac{1}{e}\)</span></p></li>
+<li><p><span class="math inline">\(\log 0.001 = x\)</span></p>
+<p><span class="math inline">\(10^x = 0.001 = 10^{-3}\)</span></p>
+<p><span class="math inline">\(x = -3\)</span></p></li>
+</ol>
+<h2 class="unnumbered" id="properties-of-log">Properties of log</h2>
+<table>
+  <thead>
+    <tr>
+      <th>General</th>
+      <th>Common log</th>
+      <th>Natural log</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\(\log_a 1 = 0 \)</td>
+      <td>\(\log 1 = 0\)</td>
+      <td>\(\ln 1 = 0\)</td>
+    </tr>
+    <tr>
+      <td>\(\log_a a = 1\)</td>
+      <td>\(\log 10 = 1\)</td>
+      <td>\(\ln e = 1\)</td>
+    </tr>
+    <tr>
+      <td>\(\log_a a^x = x\)</td>
+      <td>\(\log 10^x = x\)</td>
+      <td>\(\ln e^x = x\)</td>
+    </tr>
+    <tr>
+      <td>\(a^{\log_a x} = x\)</td>
+      <td>\(10^{\log x} = x\)</td>
+      <td>\(e^{\ln x} = x\)</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Problem 5.</strong> Evaluate.</p>
+<ol>
+<li><p><span class="math inline">\(e^{\ln \sqrt{3}} =
+\sqrt{3}\)</span></p></li>
+<li><p><span class="math inline">\(\ln(1/e) = \ln(e^{-1}) =
+-1\)</span></p></li>
+<li><p><span class="math inline">\(\ln e^4 = 4\)</span></p></li>
+<li><p><span class="math inline">\(\log_5 1 = 0\)</span></p></li>
+</ol>
+<p><strong>Problem 6.</strong> Sketch the graph of <span
+class="math inline">\(f(x) = \log_3(x-1) - 2\)</span> based on the graph
+of <span class="math inline">\(g(x) = \log_3 x\)</span> and state the
+domain, range, and asymptote.</p>
+<p>From <span class="math inline">\(g(x) = \log_3 x\)</span>:</p>
+<ol>
+<li><p>Shift 1 unit to the right.</p></li>
+<li><p>Shift 2 units down.</p></li>
+</ol>
+<div style="text-align: center; margin: 20px 0;">
+<img src="images/p43-log3.svg" alt="Transformation of g(x) = log_3(x) to f(x) = log_3(x-1) - 2. The original function log_3(x) is shown passing through the point (1,0) with a vertical asymptote at x = 0. The transformed function f(x) = log_3(x-1) - 2 is shifted 1 unit to the right and 2 units down, passing through the point (2,-2) with a vertical asymptote at x = 1. The graph shows the step-by-step transformation with different line styles or colors for each stage" /></p>
+<p><span>Transformation of <span class="math inline">\(g(x) = \log_3
+x\)</span> to <span class="math inline">\(f(x) = \log_3(x-1) -
+2\)</span>.</span></p>
+</div>
+<p>Properties:</p>
+<ul>
+<li><p>Domain: <span class="math inline">\((1, \infty)\)</span> (Since
+<span class="math inline">\(x - 1 &gt; 0 \Rightarrow x &gt;
+1\)</span>)</p></li>
+<li><p>Range: <span class="math inline">\((-\infty,
+\infty)\)</span></p></li>
+<li><p>V.A.: <span class="math inline">\(x = 1\)</span></p></li>
+</ul>
+<p><strong>Problem 7.</strong> Find the domain.</p>
+<ol>
+<li><p><span class="math inline">\(f(x) = \log_3(2 - 8x)\)</span></p>
+<p>Need: <span class="math inline">\(2 - 8x &gt; 0\)</span></p>
+<p><span class="math inline">\(2 &gt; 8x\)</span></p>
+<p><span class="math inline">\(\frac{2}{8} &gt; x\)</span></p>
+<p><span class="math inline">\(x &lt; \frac{1}{4}\)</span></p>
+<p>Domain: <span class="math inline">\(\left(-\infty,
+\frac{1}{4}\right)\)</span></p></li>
+<li><p><span class="math inline">\(g(x) = \ln(x - x^2)\)</span></p>
+<p>Need: <span class="math inline">\(x - x^2 &gt; 0\)</span></p>
+<p><span class="math inline">\(x(1 - x) &gt; 0\)</span></p>
+<p><span class="math inline">\(x(1-x)\)</span> is a parabola in factored
+form with zeros at 0 and 1.</p>
+<p>From the graph we see it is positive when <span
+class="math inline">\(x\)</span> in <span class="math inline">\((0,
+1)\)</span>.</p>
+<p>Domain: <span class="math inline">\((0, 1)\)</span></p></li>
+</ol>
+<p><strong>Problem 8.</strong> Let’s solve this problem from the last
+section. The thickness of a piece of paper is about 0.1 mm. The
+thickness doubles each time as you fold it. If it is physically
+possible, after how many folds, the thickness will be equal to the
+distance between Earth and the Moon (384,400 km)?</p>
+<p>This is similar to compound interest where the thickness doubles with
+each fold.</p>
+<p>Let <span class="math inline">\(x\)</span> = number of folds</p>
+<p>Convert to same units: <span class="math inline">\(384,400 \text{ km}
+= 384,400 \times 10^6 \text{ mm}\)</span></p>
+<p><span class="math display">\[\begin{align*}
+0.1 \cdot 2^x &amp;= 384,400 \times 10^6 \text{ mm} \\
+2^x &amp;= 384,400 \times 10^7 \\
+\log_2 (384,400 \times 10^7) &amp;= x \\
+x &amp;\approx 41.8
+\end{align*}\]</span></p>
+<p>Therefore, it would take approximately <strong>42 folds</strong>.</p>
+</body>
+</html>

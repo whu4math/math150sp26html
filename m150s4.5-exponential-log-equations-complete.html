@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title><strong>4.5 Exponential and Logarithmic Equations</strong></title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="umbc_style.css" />
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">Print/Save as PDF</button>
+
+<header id="title-block-header">
+<h1 class="title"><strong>4.5 Exponential and Logarithmic
+Equations</strong></h1>
+</header>
+<p><strong>Recall: Exponential and logarithmic functions are inverses of
+each other.</strong></p>
+<h1 class="section-title">Exponential and Log Equations</h1>
+<ol>
+<li><p>Solve exponential equations.</p>
+<ol>
+<li><p><span class="math inline">\(5^{x-1}=125\)</span></p>
+<p><span class="math display">\[\begin{align*}
+5^{x-1} &amp;= 5^3 \\
+x - 1 &amp;= 3 \\
+x &amp;= 4
+\end{align*}\]</span></p></li>
+<li><p><span class="math inline">\(2^{1-x}=3\)</span></p>
+<p><span class="math display">\[\begin{align*}
+\ln 2^{1-x} &amp;= \ln 3 \quad \text{(take $ln$ or $log$ on both
+sides)}\\
+(1-x) \ln 2 &amp;= \ln 3 \\
+(1-x) &amp;= \frac{\ln 3}{\ln 2} \\
+x &amp;= 1 - \frac{\ln 3}{\ln 2}
+\end{align*}\]</span></p></li>
+<li><p><span class="math inline">\(3e^x=10\)</span></p>
+<p><span class="math display">\[\begin{align*}
+e^x &amp;= \frac{10}{3} \\
+\ln e^x &amp;= \ln \frac{10}{3} \\
+x &amp;= \ln\left(\frac{10}{3}\right)
+\end{align*}\]</span></p></li>
+<li><p><span class="math inline">\(8+e^{1-4x}=20\)</span></p>
+<p><span class="math display">\[\begin{align*}
+e^{1-4x} &amp;= 12 \\
+\ln e^{1-4x} &amp;= \ln 12 \\
+1-4x &amp;= \ln 12 \\
+-4x &amp;= \ln 12 - 1 \\
+4x &amp;= 1 - \ln 12 \\
+x &amp;= \frac{1 - \ln 12}{4}
+\end{align*}\]</span></p></li>
+<li><p><span class="math inline">\(5^x=4^{x+1}\)</span></p>
+<p><span class="math display">\[\begin{align*}
+\ln 5^x &amp;= \ln 4^{x+1} \\
+x \ln 5 &amp;= (x+1)\ln 4 \\
+x \ln 5 &amp;= x\ln 4 + \ln 4 \\
+x(\ln 5 - \ln 4) &amp;= \ln 4 \\
+x &amp;= \frac{\ln 4}{\ln 5 - \ln 4} = \frac{\ln 4}{\ln(5/4)}
+\end{align*}\]</span></p></li>
+</ol></li>
+<li><p>Solve logarithmic equations. <strong>MUST CHECK THE
+SOLUTIONS!</strong></p>
+<ol>
+<li><p><span class="math inline">\(\log(3x+5)=2\)</span></p>
+<p><span class="math display">\[\begin{align*}
+10^2 &amp;= 3x + 5 \\
+100 &amp;= 3x + 5 \\
+3x &amp;= 95 \\
+x &amp;= \frac{95}{3}
+\end{align*}\]</span></p>
+<p><em>Check:</em> <span
+class="math inline">\(\log\left(3\cdot\frac{95}{3} + 5\right) = \log 100
+= 2\)</span></p>
+<p><span class="math inline">\(x = \frac{95}{3}\)</span> is a
+solution.</p></li>
+<li><p><span class="math inline">\(\log_2 x+\log_2(x-3)=2\)</span></p>
+<p><span class="math display">\[\begin{align*}
+\log_2[x(x-3)] &amp;= 2 \quad \text{combine two logs}\\
+x(x-3) &amp;= 2^2 \quad \text{exponential form}\\
+x^2 - 3x &amp;= 4 \\
+x^2 - 3x - 4 &amp;= 0 \\
+(x-4)(x+1) &amp;= 0 \\
+x &amp;= -1, 4
+\end{align*}\]</span></p>
+<p><span class="math inline">\(x = -1\)</span>: <span
+class="math inline">\(\log_2(-1)\)</span> is undefined</p>
+<p><span class="math inline">\(x = 4\)</span>: <span
+class="math inline">\(\log_2 4 + \log_2 1 = 2 + 0 = 2\)</span></p>
+<p><span class="math inline">\(x = 4\)</span> is a solution.</p></li>
+<li><p><span
+class="math inline">\(\log_3(x+15)-\log_3(x-1)=2\)</span></p>
+<p><span class="math display">\[\begin{align*}
+\log_3 \frac{x+15}{x-1} &amp;= 2 \\
+\frac{x+15}{x-1} &amp;= 3^2 = 9 \\
+x + 15 &amp;= 9(x-1) \\
+x + 15 &amp;= 9x - 9 \\
+24 &amp;= 8x \\
+x &amp;= 3
+\end{align*}\]</span></p>
+<p><em>Check:</em> <span class="math inline">\(\log_3 18 - \log_3 2 =
+\log_3 9 = 2\)</span></p>
+<p><span class="math inline">\(x = 3\)</span> is a solution.</p></li>
+<li><p><span class="math inline">\(\log_2x-\log_2(3x+1)=1\)</span></p>
+<p><span class="math display">\[\begin{align*}
+\log_2 \frac{x}{3x+1} &amp;= 1 \\
+\frac{x}{3x+1} &amp;= 2 \\
+x &amp;= 2(3x+1) \\
+x &amp;= 6x + 2 \\
+-5x &amp;= 2 \\
+x &amp;= -\frac{2}{5}
+\end{align*}\]</span></p>
+<p><em>Check:</em> <span
+class="math inline">\(\log_2\left(-\frac{2}{5}\right)\)</span> is
+undefined.</p>
+<p>The equation has no solution.</p></li>
+</ol></li>
+</ol>
+<h1 class="section-title">Compound Interest Problems</h1>
+<p><strong>Interest compounded <span class="math inline">\(n\)</span>
+times per year:</strong> <span class="math inline">\(A(t) = P\left(1 +
+\frac{r}{n}\right)^{nt}\)</span></p>
+<p><strong>Interest compounded continuously:</strong> <span
+class="math inline">\(A(t) = Pe^{rt}\)</span></p>
+<ol>
+<li><p>A man invests $5000 in an account that pays 8.5% interest per
+year, compounded quarterly.</p>
+<p>(a) Find the amount after 3 years.</p>
+<p><span class="math display">\[r = 8.5\% = 0.085, \quad n =
+4\]</span></p>
+<p><span class="math display">\[A(t) = 5000\left(1 +
+\frac{0.085}{4}\right)^{4t}\]</span></p>
+<p><span class="math display">\[A(3) = 5000\left(1 +
+\frac{0.085}{4}\right)^{12} \approx \$ 6435.09\]</span></p>
+<p>(b) How long will it take for the investment to double?</p>
+<p><span class="math display">\[\begin{align*}
+10000 &amp;= 5000\left(1 + \frac{0.085}{4}\right)^{4t} \\
+2 &amp;= \left(1 + \frac{0.085}{4}\right)^{4t} \\
+\ln 2 &amp;= \ln\left(1 + \frac{0.085}{4}\right)^{4t} \\
+\ln 2 &amp;= 4t \ln\left(1 + \frac{0.085}{4}\right) \\
+t &amp;= \frac{\ln 2}{4\ln\left(1 + \frac{0.085}{4}\right)} \approx 8.24
+\text{ years}
+\end{align*}\]</span></p></li>
+<li><p>Find the time required for an investment of $5000 to grow to
+$8000 at an interest rate of 7.5% per year, compounded monthly.</p>
+<p><span class="math display">\[\begin{align*}
+8000 &amp;= 5000\left(1 + \frac{0.075}{12}\right)^{12t} \\
+\frac{8}{5} &amp;= \left(1 + \frac{0.075}{12}\right)^{12t} \\
+\ln \frac{8}{5} &amp;= \ln\left(1 + \frac{0.075}{12}\right)^{12t} \\
+\ln \frac{8}{5} &amp;= 12t \ln\left(1 + \frac{0.075}{12}\right) \\
+t &amp;= \frac{\ln \frac{8}{5}}{12\ln\left(1 + \frac{0.075}{12}\right)}
+\approx 6.29 \text{ years}
+\end{align*}\]</span></p></li>
+</ol>
+</body>
+</html>
