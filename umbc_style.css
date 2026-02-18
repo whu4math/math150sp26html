@@ -37,9 +37,11 @@ h2, .section-title {
     margin-top: 2rem;
 }
 
-h2 {
+h2, .unumbered {
     color: var(--umbc-blue);
+    background-color: transparent;
     border-bottom: 2px solid var(--umbc-gold);
+    font-size: 1rem;
     padding-bottom: 5px;
 }
 
@@ -183,4 +185,9 @@ th, td {
 
 th {
     font-weight: bold;
+}
+
+
+ol ol {
+  list-style-type: lower-alpha;
 }

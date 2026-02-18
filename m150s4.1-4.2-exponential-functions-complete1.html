@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>4.1 &amp; 4.2 Exponential Functions</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="umbc_style.css" />
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">Print/Save as PDF</button>
+
+<h1 class="document-title">4.1 &amp; 4.2 Exponential Functions</h1>
+<h1 class="section-title">Compound Interest</h1>
+<h3 class="unnumbered" id="discrete-compounding">Discrete
+Compounding</h3>
+<p><strong>Problem 1:</strong> Suppose you deposit $1 at a bank that
+offers an APR (annual percentage rate) of 100%. Find the balance after 1
+year if the interest is compounded:</p>
+<ol>
+<li><p><strong>Annually</strong> (<span
+class="math inline">\(n=1\)</span>): <span class="math display">\[1+1 =
+\$2.00\]</span></p></li>
+<li><p><strong>Semiannually</strong> (<span
+class="math inline">\(n=2\)</span>): <span class="math display">\[1
+\left(1 + \frac{1}{2}\right) \left(1 + \frac{1}{2}\right)=\left(1 +
+\frac{1}{2}\right)^2 = (1.5)^2 = \$2.25\]</span></p></li>
+<li><p><strong>Quarterly</strong> (<span
+class="math inline">\(n=4\)</span>): <span class="math display">\[1
+\left(1 + \frac{1}{4}\right)^4 = (1.25)^4 \approx
+\$2.44\]</span></p></li>
+<li><p><strong>Monthly</strong> (<span
+class="math inline">\(n=12\)</span>): <span class="math display">\[1
+\left(1 + \frac{1}{12}\right)^{12} \approx \$2.61\]</span></p></li>
+</ol>
+<p><strong>General Compound Interest Formula</strong> <span
+class="math display">\[A(t) = P \left(1 +
+\frac{r}{n}\right)^{nt}\]</span></p>
+<ul>
+<li><p><span class="math inline">\(A(t)\)</span>: Amount after <span
+class="math inline">\(t\)</span> years</p></li>
+<li><p><span class="math inline">\(P\)</span>: Principal (initial
+investment)</p></li>
+<li><p><span class="math inline">\(r\)</span>: Annual interest rate (in
+decimal form)</p></li>
+<li><p><span class="math inline">\(n\)</span>: Number of compounding
+periods per year</p></li>
+<li><p><span class="math inline">\(t\)</span>: Number of years</p></li>
+</ul>
+<h1 class="section-title">The Exponential Function</h1>
+<p>The exponential function is in the form <span
+class="math inline">\(f(x) = a^x\)</span>, where <span
+class="math inline">\(a &gt; 0\)</span> and <span
+class="math inline">\(a \neq 1\)</span>.</p>
+<h3 class="unnumbered" id="properties-of-fx-ax">Properties of <span
+class="math inline">\(f(x) = a^x\)</span></h3>
+<ul>
+<li><p><strong>Domain:</strong> <span class="math inline">\((-\infty,
+\infty)\)</span></p></li>
+<li><p><strong>Range:</strong> <span class="math inline">\((0,
+\infty)\)</span></p></li>
+<li><p><strong><span
+class="math inline">\(x\)</span>-intercept:</strong> None</p></li>
+<li><p><strong><span
+class="math inline">\(y\)</span>-intercept:</strong> <span
+class="math inline">\((0, 1)\)</span></p></li>
+<li><p><strong>Horizontal Asymptote (H.A.):</strong> <span
+class="math inline">\(y = 0\)</span></p></li>
+<li><p><strong>Vertical Asymptote (V.A.):</strong> None</p></li>
+</ul>
+<h3 class="unnumbered" id="graphs">Graphs</h3>
+<div style="text-align: center; margin: 20px 0;">
+<div class="minipage">
+<img src="images/fig-base-a.svg" alt="Graph showing exponential growth in blue and decay in red, both intersecting at (0,1)" alt="image" /></p>
+<p><span>Exponential Function with base <span
+class="math inline">\(a\)</span></span></p>
+</div>
+<div class="minipage">
+<img src="images/fig-comparison-bases.svg" alt="Comparison of 5^x, 2^x, (1/2)^x, and (1/5)^x showing how base size affects steepness" alt="image" /></p>
+<span class="caption">Comparison of Bases</span>
+</div>
+</div>
+<h3 class="unnumbered" id="transformations">Transformations</h2>
+<p><strong>Problem 2:</strong> Use the graph of <span
+class="math inline">\(g(x) = 2^x\)</span> to sketch the graph of <span
+class="math inline">\(f(x) = 4 - 2^{x-3}\)</span>. State the domain,
+range, and asymptote.</p>
+<div class="minipage">
+<p><em>Steps:</em></p>
+<ol>
+<li><p>Shift right by 3.</p></li>
+<li><p>Reflect over the <span
+class="math inline">\(x\)</span>-axis.</p></li>
+<li><p>Shift up by 4.</p></li>
+</ol>
+</div>
+<div class="minipage">
+<div style="text-align: center; margin: 20px 0;">
+<img src="images/fig-transformation-2x.svg" alt="Graph titled 'Transformation of 2^x to 4-2^{x-3}' showing the step-by-step evolution: 1. Base growth curve 2^x (dashed), 2. Shift right by 3 (blue dotted), 3. Reflection over x-axis (purple dash-dotted), and 4. Final curve f(x)=4-2^{x-3} (solid red) shifted up 4. The final curve approaches a horizontal asymptote at y=4 and has intercepts at (5,0) and (0, 31/8)" alt="image" /></p>
+<p><span>Transformation of <span class="math inline">\(2^x\)</span> to
+<span class="math inline">\(4-2^{x-3}\)</span></span></p>
+</div>
+</div>
+<p><em>Calculations:</em></p>
+<ul>
+<li><p><strong>y-intercept</strong> (set <span
+class="math inline">\(x=0\)</span>): <span class="math inline">\(4 -
+2^{0-3} = 4 - 2^{-3} = 4 - \frac{1}{8} = \frac{31}{8}\)</span>. Point:
+<span class="math inline">\((0, \frac{31}{8})\)</span>.</p></li>
+<li><p><strong>x-intercept</strong> (set <span
+class="math inline">\(y=0\)</span>): <span
+class="math display">\[\begin{align*}
+        4 - 2^{x-3} &amp;= 0 \\
+        2^{x-3} &amp;= 4 \\
+        2^{x-3} &amp;= 2^2 \\
+        x - 3 &amp;= 2 \implies x = 5 \quad \text{Point: } (5,0)
+\end{align*}\]</span></p></li>
+</ul>
+<p><strong>Properties:</strong> Domain: <span
+class="math inline">\((-\infty, \infty)\)</span>, Range: <span
+class="math inline">\((-\infty, 4)\)</span>, H.A.: <span
+class="math inline">\(y = 4\)</span>.</p>
+<p><strong>Problem 3:</strong> Use the graph of <span
+class="math inline">\(g(x) = \left(\frac{1}{3}\right)^x\)</span> to
+sketch <span class="math inline">\(f(x) = \left(\frac{1}{3}\right)^{x+1}
+- 9\)</span>.</p>
+<div class="minipage">
+<p><em>Steps:</em></p>
+<ol>
+<li><p>Shift left by 1.</p></li>
+<li><p>Shift down by 9.</p></li>
+</ol>
+</div>
+<div class="minipage">
+<div style="text-align: center; margin: 20px 0;">
+<img src="images/fig-transformation-one-third.svg" alt="Graph titled 'Transformation of (1/3)^x to (1/3)^{x+1}-9' showing the step-by-step evolution of an exponential decay function. 1. The base curve g(x)=(1/3)^x is dashed black, passing through (0,1). 2. A dotted blue curve shows a horizontal shift 1 unit to the left. 3. The final solid dark red curve, f(x)=(1/3)^{x+1}-9, is shifted vertically down 9 units. This final curve is decreasing, approaches a horizontal asymptote at y=-9, and passes through the marked points (-1,-8) and the y-intercept (0, -8 2/3)" alt="image" /></p>
+<p><span>Transformation of <span class="math inline">\((1/3)^x\)</span>
+to <span class="math inline">\((1/3)^{x+1}-9\)</span></span></p>
+</div>
+</div>
+<p><em>Key Point Tracking:</em> <span class="math inline">\((0,1)
+\xrightarrow{\text{Left 1}} (-1, 1) \xrightarrow{\text{Down 9}} (-1,
+-8)\)</span>.<br />
+<strong>Properties:</strong> Domain: <span
+class="math inline">\((-\infty, \infty)\)</span>, Range: <span
+class="math inline">\((-9, \infty)\)</span>, H.A.: <span
+class="math inline">\(y = -9\)</span>.</p>
+<p><strong>Problem 4: Paper Folding Experiment.</strong> A standard
+sheet of paper is about 0.1 mm thick. If you fold it in half
+repeatedly:</p>
+<ul>
+<li><p>To reach the Moon (384,400 km): Requires approx <strong>42
+folds</strong>: <span class="math inline">\(0.1(10^{-6})(2)^{42}\approx
+439,805\)</span> km</p></li>
+<li><p>To reach Mars (54,600,000 km): Requires approx <strong>49
+folds</strong>: <span class="math inline">\(0.1(10^{-6})(2)^{49}\approx
+56,294,995\)</span> km</p></li>
+</ul>
+<p><em>Conclusion: Exponential functions grow very fast!</em></p>
+<h1 class="section-title">The Natural Exponential Function</h1>
+<h3 class="unnumbered" id="continuous-compounding">Continuous
+Compounding</h3>
+<p><strong>Problem 5:</strong> Referencing Problem 1, if we compound
+more frequently (as <span class="math inline">\(n \to \infty\)</span>):
+<span class="math display">\[\left(1 + \frac{1}{n}\right)^n
+\to   2.71828182845904523536...\]</span> This irrational number is
+called <strong>Euler’s number</strong> and denoted by <span
+class="math inline">\(e\)</span>.</p>
+<p><strong>Continuous Compounding Formula</strong> <span
+class="math display">\[A(t) = Pe^{rt}\]</span> Where:</p>
+<ul>
+<li><p><span class="math inline">\(P\)</span>: Principal (initial
+investment)</p></li>
+<li><p><span class="math inline">\(r\)</span>: Annual interest
+rate</p></li>
+<li><p><span class="math inline">\(t\)</span>: Time in years</p></li>
+</ul>
+<p><strong>Natural exponential function</strong> <span
+class="math inline">\(f(x) = e^x\)</span></p>
+<div style="text-align: center; margin: 20px 0;">
+<img src="images/fig-natural-ex.svg" alt="Graph titled 'Natural Exponential Functions e^x and e^{-x}' on a coordinate plane. It features two curves: a dark blue curve representing f(x) = e^x which shows rapid exponential growth rising to the right, and a dark red curve representing f(x) = e^{-x} which shows exponential decay falling to the right. Both curves are symmetric across the y-axis, intersect at the y-intercept (0,1), and approach the horizontal asymptote y=0 along the x-axis" alt="image" /></p>
+<span class="caption">Comparison of Natural Exponential Growth and Decay</span>
+</div>
+<ul>
+<li><p><span class="math inline">\(e^{kx}\)</span> represents
+exponential <strong>growth</strong> (if <span
+class="math inline">\(k&gt;0\)</span>).</p></li>
+<li><p><span class="math inline">\(e^{-kx}\)</span> represents
+exponential <strong>decay</strong> (if <span
+class="math inline">\(k&gt;0\)</span>).</p></li>
+</ul>
+<p><strong>Problem 6:</strong> Use the graph of <span
+class="math inline">\(g(x) = e^x\)</span> to sketch <span
+class="math inline">\(f(x) = e^{x-3} + 5\)</span>.</p>
+<p><em>Steps:</em></p>
+<ol>
+<li><p>Shift right by 3.</p></li>
+<li><p>Shift up by 5.</p></li>
+</ol>
+<p><em>Key Point:</em> <span class="math inline">\((0,1) \to (3, 1) \to
+(3, 6)\)</span>.<br />
+<em>Properties:</em> Domain: <span class="math inline">\((-\infty,
+\infty)\)</span>, Range: <span class="math inline">\((5,
+\infty)\)</span>, H.A.: <span class="math inline">\(y = 5\)</span>.</p>
+<div style="text-align: center; margin: 20px 0;">
+<img src="images/fig-transformation-ex.svg" alt="Graph titled 'Transformation of e^x to e^{x-3}+5' illustrating two steps of translation. 1. The base curve g(x)=e^x is a dashed black line passing through (0,1). 2. A dotted blue curve shows the function shifted 3 units to the right, passing through (3,1). 3. The final solid dark red curve, f(x)=e^{x-3}+5, is shifted 5 units up from the blue curve, passing through the key point (3,6). This final function approaches a horizontal asymptote at y=5, shown as a dashed purple line" alt="image" /></p>
+<p><span>Transformation of <span class="math inline">\(e^x\)</span> to
+<span class="math inline">\(e^{x-3}+5\)</span></span></p>
+</div>
+<p><strong>Problem 7:</strong> $10,000 is invested at an interest rate
+of 3% per year. Find the value after 10 years if compounded:</p>
+<ol>
+<li><p><strong>Monthly</strong>: <span class="math display">\[A(10) =
+10,000 \left(1 + \frac{0.03}{12}\right)^{12 \times 10} \approx
+\mathbf{\$13,493.54}\]</span></p></li>
+<li><p><strong>Continuously</strong>: <span class="math display">\[A(10)
+= 10,000 e^{0.03 \times 10} = 10,000 e^{0.3} \approx
+\mathbf{\$13,498.59}\]</span></p></li>
+</ol>
+<p><strong>Problem 8 (Drug Decay):</strong> A drug is administered to a
+patient. The number of milligrams remaining in the bloodstream after
+<span class="math inline">\(t\)</span> hours is <span
+class="math inline">\(D(t) = 50e^{-0.2t}\)</span>.</p>
+<ol>
+<li><p><span>How many mg are in the bloodstream when <span
+class="math inline">\(t=0\)</span>?</span> <span
+class="math display">\[D(0) = 50 e^{-0.2(0)} = 50 e^0 = 50(1) =
+\mathbf{50 \text{ mg}}\]</span></p></li>
+<li><p><span>How many mg remain after 3 hours?</span> <span
+class="math display">\[D(3) = 50 e^{-0.2(3)} = 50 e^{-0.6} \approx
+\mathbf{27.44 \text{ mg}}\]</span></p></li>
+</ol>
+</body>
+</html>
