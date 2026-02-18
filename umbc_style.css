@@ -187,7 +187,10 @@ th {
     font-weight: bold;
 }
 
+div.problem {
+  margin-bottom: 1.5em;
+}
 
-ol ol {
-  list-style-type: lower-alpha;
+div.problem > p:first-child strong {
+  font-weight: bold;
 }
